@@ -1,0 +1,11 @@
+Rules:
+-------------------------------------------------------
+1- Fill your airfoil coordinates in airfoil.txt
+2- The first column is x-coordinates
+3- The second column is y-coordinates
+4- Test your airfoil by using AirfoilTest.m
+5- Test your mesh by using MeshTest.m
+6- The main code is LaplaceSolution.m
+7- Follow the instruction on it
+8- Enjoy
+-------------------------------------------------------
