@@ -116,7 +116,7 @@ while (psi_body_error(t-1+T) >= error_order_psi_body || psi_error(t-1+T) >= erro
 %         psi_body(t+1)=(psi(2*(x_body_index(1)-1)+1,y_body_index(end)+1));
         psi_body(t+1)=(psi(2*(x_body_index(1)-1)+1,y_body_index(end)+1)+psi(2*(x_body_index(1)-1),y_body_index(end)+1))/2;
         psi(2*(x_body_index(1)-1):2*(x_body_index(1)-1)+1,y_body_index(1):y_body_index(end))=psi_body(t+1);
-        psi_error(t)=max(max(abs(psi_old-psi)));
+        psi_error(t)=max(max(abs(psi_old-psi)))/ny/nx;
         psi_old=psi;
         % psi body error
         psi_body_error(t)=abs(psi_body(t+1)-psi_body(t));
